@@ -1,0 +1,61 @@
+'''
+最速下降法的python实现
+'''
+#导入相应的包
+import math
+import os
+import random
+import re
+import sys
+#单行输入
+'''line = sys.stdin.readline().strip()
+lines = line.split()
+print(line)
+print(lines)'''
+#多行输入
+'''list = []
+while True:
+    line = sys.stdin.readline().strip()
+    if line == '':
+        break
+    lines = line.split()
+    #print int(lines[0]) + int(lines[1])
+    list.append([int(lines[0]),int(lines[1])])
+print(list)'''
+#lambda函数
+'''product = lambda x,y : x*y
+add = lambda x,y=0 : x+y
+print(product(3,4))
+print(add(8,9))'''
+#找数字
+'''def findNumber(arr, k):
+    flag = 0
+    for i in range(len(arr)):
+        if arr[i] == k:
+            flag = 1
+            break
+    if flag == 1:
+        return 'YES'
+    else:
+        return 'NO'
+
+arr_count = int(input().strip())
+arr = []
+for _ in range(arr_count):
+    arr_item = int(input().strip())
+    arr.append(arr_item)
+k = int(input().strip())
+res = findNumber(arr, k)
+print(res)'''
+#找奇数
+'''def oddNumbers(l, r):
+    res = []
+    while l <= r:
+        if l % 2 == 1:
+            res.append(l)
+        l+=1
+    return res
+l = int(input().strip())
+r = int(input().strip())
+res = oddNumbers(l, r)
+print(res)'''
